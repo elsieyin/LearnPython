@@ -29,3 +29,6 @@ test.normal()
 # 类方法 <class '__main__.TestMethod'>
 
 # TestMethod.static_method()
+
+print(test.__dict__)
+print(TestMethod.__dict__)

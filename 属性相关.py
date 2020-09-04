@@ -1,4 +1,5 @@
 class Person:
+    height = 180
     pass
 
 p = Person()
@@ -21,3 +22,6 @@ p.pets.append('小刘')
 # p.pets = [1, 2]
 
 print(p.pets, id(p.pets))
+
+q = Person()
+print(id(p.height), id(q.height))
