@@ -1,22 +1,27 @@
 class Animal:
-    x = 10
+    __x = 10
     def test(self):
-        print(Animal.x)
-        print(self.x)
+        print(Animal.__x)
+        print(self.__x)
 
-class Dog(Animal):
-    def test2(self):
-        print(Dog.x)
-        print(self.x)
+# class Dog(Animal):
+#     def test2(self):
+#         print(Dog.x)
+#         print(self.x)
 
 # 测试代码
-a = Animal()
+# Name Mangling 不同解释器可能规则不同 不建议
+print(Animal.__dict__)
+print(Animal._Animal__x)
+
+
+# a = Animal()
 # a.test()
 
-d = Dog()
+# d = Dog()
 # d.test2()
 
-print(Animal.x)
-print(Dog.x)
-print(a.x)
-print(d.x)
+# print(Animal.x)
+# print(Dog.x)
+# print(a.x)
+# print(d.x)
