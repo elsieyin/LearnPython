@@ -40,3 +40,5 @@ print(p.age)
 
 p.age = 18
 print(p.age)
+
+# 经典类略麻烦，懒得总结
